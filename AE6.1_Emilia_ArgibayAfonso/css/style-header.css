@@ -1,0 +1,154 @@
+/* CONTENEDOR GENERAL DEL HEADER */
+.header-box {
+    background-color:#24262B;
+    height: 55px;
+    padding: 5px;
+    display: flex;
+    flex-basis: content;
+}
+
+/* SECCIÓN DEL LOGO  */
+.logo-section {
+    display: flex;
+    width: 25%;
+
+    .logo-image {
+        width: 42px;
+        height: 42px;
+        margin: 12px;
+        align-self: center;
+    }
+
+    .all-title {
+        font-weight: bold;
+        color:white;
+    }
+    .shoes-title {
+        font-weight: 400;
+        color:#ac6011;
+    }
+    h1 {
+        font-size: 27px;
+        gap: 5px;
+        margin: 2px;
+        align-self: center;
+    }
+}
+
+/* SECCIÓN DE OPCIONES DE NAVIGACIÓN POR LAS DIFERENTES PÁGINAS */
+.interface-section {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    a {
+        padding: 10px; 
+        color:white;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    a:hover {
+        animation: interfaceAnimation 1s forwards;
+        font-weight: 500;
+    }
+}
+
+/* SECCIÓN DE INICIO DE SESIÓN O DE REGISTRO */
+.login-register-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+    gap: 5px;
+    a {
+        padding: 8px;
+        color:#aa6011;
+        border-radius: 5px;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .login-button {
+        border: 2px solid #aa6011;
+    }
+    .login-button:hover {
+        animation: loginButtonAnimation 1s forwards 0.1s
+    }
+
+    .register-button {
+        border: 2px solid #aa6011;
+        background-color: white;
+    }
+    .register-button:hover {
+        animation: registerButtonAnimation 1s forwards 0.1s
+    }
+}
+
+/* ANIMACIONES EMPLEADAS EN EL HEADER DE LA PÁGINA*/
+@keyframes interfaceAnimation {
+    0% {background: transparent;}
+    100% {
+        background-color:white;
+        border: 6px solid white;
+        color: var(--primary-color);
+    }
+}
+
+@keyframes loginButtonAnimation {
+    from {
+        background-color: var(--background-color);
+        color:var(--primary-color);
+    }
+    to {
+        background-color: var(--primary-color);
+        color: white;
+    }
+}
+
+@keyframes registerButtonAnimation {
+    from {
+        background-color: white;
+        color:var(--primary-color);
+    }
+    to {
+        background-color: var(--primary-color);
+        color: white;
+    }
+}
+
+/* MEDIA QUERY PARA PANTALLAS */
+/* TABLET */
+@media screen and (width < 1200px) {
+    .interface-section {
+        margin: 0 1.5% 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        align-self: center;
+    }
+
+    .login-register-section {
+        display: none;
+    }
+}
+
+/* MOVIL */
+@media screen and (width < 700px) {
+    .header-box {
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .interface-section, .logo-section {
+        overflow: hidden;
+        margin: auto;
+        width: auto;
+    }
+
+    .login-register-section {
+        display: none;
+    }
+}   
+
+/* HECHO */

@@ -1,0 +1,22 @@
+* {
+    /*SE RESETE DE LA PÁGINA WEB PARA ELIMINAR LAS CARACTERÍSTICAS DE BASE DE CUALQUIER NAVEGADOR*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*SE ESTABLECE LA FUENTE 'ROBOTO' EN TODAS LAS PÁGINAS WEBS*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*SE LIMITA EL ANCHO Y EL ALTO DE LA PÁGINA EN PORCENTAJE*/
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* SE DETERMINA LA PALETA DE COLORES QUE SE USA EN TODAS LAS PÁGINAS */
+:root {
+    --background-color: #24262B;
+    --primary-color:#AC6011;
+    --secondary-color:#505155;
+    --underline-color:#E09D0E;
+}
+
+
+/* HECHO */

@@ -1,0 +1,90 @@
+/* CONTENEDORES DEL FOOTER */
+footer {
+    width: 100%;
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+.footer-box {
+    height: 10%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3%;
+}
+
+/* SECCIONES DEL FOOTER */
+.footer-section {
+    width: 20%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    display: flex;
+    flex-direction: column;
+    h3, a {
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        padding: 3px;
+        margin: 2px;
+    }
+    h3 {
+        border-bottom: 3px solid #E09D0E;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        width: 100%;
+    }
+    a {
+        font-size: 14px;
+        opacity: 70%;
+    }
+} 
+
+/* SECCIÓN DE 'SIGUENOS' */
+.follow-us-section > .socials {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 16px;
+}
+/* ICONOS DE REDES SOCIALES EN SECCIÓN 'SIGUENOS' */
+#foot-facebook, #foot-instagram, #foot-twitter, #foot-linkedin {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* HOVERS DE ICONOS DE REDES SOCIALES  */
+#foot-facebook:hover {
+    background-color: #3B579D;
+}
+#foot-instagram:hover {
+    background-image: linear-gradient(90deg, purple, red, yellow);;
+}
+#foot-twitter:hover {
+    background-color: black;
+}
+#foot-linkedin:hover {
+    background-color: #3B579D;
+}
+
+/* MEDIA QUERY PARA PANTALLAS */
+/* MOVIL */
+@media screen and (width < 700px) {
+    .footer-box {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .footer-section {
+            width: 100%;
+        }
+    }
+}
+
+/* HECHO */
